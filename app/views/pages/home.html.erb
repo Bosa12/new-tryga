@@ -1,2 +1,46 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag "IMG_1753.JPG", class: "d-block w-100", style: "height: 600px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" %>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="about">
+    <h1 class="text-center mb-4" style="color: #d32f2f; font-weight: bold;">Sobre</h1>
+    <div class="card p-4" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+      <div class="row">
+        <p class="lead" style="line-height: 1.8; text-align: justify;">
+          A Pizzaria Tryga nasceu em Portugal, inspirada por um conceito único: a união entre tradição e inovação.
+          O nome "Tryga" vem de "trigo" em um dialeto antigo, simbolizando a base de cada pizza artesanal, feita com farinhas selecionadas e técnicas que respeitam a essência da culinária portuguesa.
+          Ao mesmo tempo, "Tryga" também reflete o convite para experimentar sabores criativos, combinando ingredientes locais com um toque moderno.
+          Tryga é mais do que uma pizzaria, é uma experiência que honra o passado enquanto abraça o futuro.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Imagens lado a lado com espaçamento adequado -->
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <%= image_tag "Screenshot 2024-11-23 at 23.13.13.jpeg.png", class: "img-fluid rounded", style: "height: 300px; width: 100%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.15);" %>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag "Screenshot 2024-11-23 at 23.13.42.jpeg.png", class: "img-fluid rounded", style: "height: 300px; width: 100%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.15);" %>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="card p-4 bg-light" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+    <p class="lead text-center" style="line-height: 1.8; font-style: italic;">
+      A verdadeira pizza artesanal começa com uma massa feita de farinha 00 e fermentada por 48 horas.
+      Esse processo traz leveza, sabor e digestibilidade à massa, que fica crocante por fora e macia por dentro.
+      A fermentação lenta realça os sabores naturais e cria a textura perfeita para uma pizza inesquecível.
+    </p>
+  </div>
+</div>
+<script src=".carousel.js"></script>
