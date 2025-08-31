@@ -1,0 +1,16 @@
+<%= simple_form_for(@drink) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs space-y-4">
+    <%= f.input :name, label: "Nome da Bebida" %>
+    <%= f.input :description, as: :text, label: "Descrição" %>
+    <%= f.input :price, label: "Preço (€)", input_html: { step: 0.01 } %>
+    <%= f.input :category, collection: ["Refrigerante", "Água", "Vinho", "Suco", "Cerveja"], prompt: "Selecione a categoria" %>
+    <%= f.input :image, as: :file, label: "Imagem" %>
+  </div>
+
+  <div class="form-actions mt-4">
+    <%= f.button :submit, "Salvar Bebida", class: "btn btn-primary" %>
+  </div>
+<% end %>
